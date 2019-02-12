@@ -636,7 +636,7 @@ jQuery(document).ready(function(){
     pm_fullwidth_block();
 
     // Mail
-    jQuery('.pm_popup_form_wrapper input[type=submit]').click(function(){
+    /*jQuery('.pm_popup_form_wrapper input[type=submit]').click(function(){
         var this_contact = jQuery(this).parents('form');
         jQuery.post('mail.php', {
             send_mail: 'true',
@@ -649,7 +649,7 @@ jQuery(document).ready(function(){
         });
 
         return false;
-    });
+    });*/
 
     // Activate Preloader
     jQuery(".preloader_active").width(site_width).height(site_height);
