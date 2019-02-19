@@ -21,6 +21,7 @@
     <link href="css/grid.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/pm-icons.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.5.0/plyr.css" />
     <!-- <link href="css/fontawesome.css" rel="stylesheet" type="text/css" media="all"> -->
 
     <!-- JS -->
@@ -28,6 +29,7 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
     <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+	<script src="https://cdn.plyr.io/3.5.0/plyr.polyfilled.js"></script>
 </head>
 
 <body class="pm_light_type single-portfolio">
@@ -155,7 +157,14 @@
                     <div class="pm_media_output_wrapper">
                         <div class="pm_media_output_cont">
                             <div class="pm_media_output_cont_wrapper">
-                                <iframe src="https://player.vimeo.com/video/74925461" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				    <div class="plyr__video-embed" id="player">
+    					<iframe 
+						src="https://player.vimeo.com/video/74925461?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+        					allowfullscreen
+        					allowtransparency
+    					></iframe>
+</div>
+                                <!--<iframe src="https://player.vimeo.com/video/74925461" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
                             </div>
                         </div>
                     </div>
