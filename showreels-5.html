@@ -21,6 +21,7 @@
     <link href="css/grid.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/pm-icons.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.5.0/plyr.css" />
     <!-- <link href="css/fontawesome.css" rel="stylesheet" type="text/css" media="all"> -->
 
     <!-- JS -->
@@ -155,7 +156,15 @@
                     <div class="pm_media_output_wrapper">
                         <div class="pm_media_output_cont">
                             <div class="pm_media_output_cont_wrapper">
-                                <iframe src="https://player.vimeo.com/video/30583986" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                <!--<iframe src="https://player.vimeo.com/video/30583986" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+				    <div class="plyr__video-embed" id="player">
+    					<iframe 
+						src="https://player.vimeo.com/video/30583986?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+        					allowfullscreen
+        					allowtransparency
+						allow="autoplay"
+    					></iframe>
+</div>
                             </div>
                         </div>
                     </div>
@@ -191,5 +200,13 @@
             </div><!-- pm_post_wrapper -->
         </div><!-- pm_post_container_wrapper -->
     </div><!-- pm_post_container -->
+	<script src="https://cdn.plyr.io/3.5.0/plyr.polyfilled.js"></script>
+	<script > // Change the second argument to your options:
+// https://github.com/sampotts/plyr/#options
+var player = new Plyr('#player', { captions: { active: true } });
+// Expose player so it can be used from the console
+window.player = player;
+//# sourceURL=pen.js
+</script>
 </body>
 </html>
