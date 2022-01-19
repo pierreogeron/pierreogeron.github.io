@@ -201,12 +201,16 @@
         </div><!-- pm_post_container_wrapper -->
     </div><!-- pm_post_container -->
 	<script src="https://cdn.plyr.io/3.6.12/plyr.polyfilled.js"></script>
-	<script > // Change the second argument to your options:
+	<!--<script > // Change the second argument to your options:
 // https://github.com/sampotts/plyr/#options
 var player = new Plyr('#player', { captions: { active: true } });
 // Expose player so it can be used from the console
-window.player = player;
+window.player = player;-->
 //# sourceURL=pen.js
+</script>
+	<script src="path/to/plyr.js"></script>
+<script>
+  const player = new Plyr('#player');
 </script>
 </body>
 </html>
